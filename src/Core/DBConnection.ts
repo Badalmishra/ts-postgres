@@ -2,6 +2,7 @@ import { Sequelize } from "sequelize";
 class DBConnection {
     public connection: Sequelize;
     constructor() {
+        console.log('connecting to db...')
         this.connection =
             new Sequelize('template_db', 'template_user', 'template_password',
                 {

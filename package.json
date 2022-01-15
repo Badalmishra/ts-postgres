@@ -4,8 +4,8 @@
   "description": "A project set up to use node js with typescript and cold reloads",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon build/index.js",
-    "compile": "tsc --watch",
+    "start:dev": "nodemon",
+    "compile:alive": "tsc --watch",
     "start": "npm run build && node build/index.js",
     "build": "rimraf ./build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
